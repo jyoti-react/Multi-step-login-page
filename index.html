@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="banner-container">
+      <div class="outer-main">
+        <h1>Registration form</h1>
+        <div class="steps">
+            <div class="circle active">1</div><div class="line" id="level2"></div><div class="circle" id="circle2">2</div><div class="line" id="level3"></div><div class="circle" id="circle3">3</div>
+        </div>
+      <div class="form-container">
+           <form action="#">
+            <div class="form-page one">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Enter your fullname"
+                    class="form-input"
+                    id="fullname"
+                  />
+                  <p class="error" id="name-error"></p>
+                </div>
+      
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Enter your email id"
+                    class="form-input"
+                    id="email" required
+                  />
+                  <p class="error" id="email-error"></p>
+                </div>
+      
+                <div>
+                  <input
+                    type="tel"
+                    placeholder="Enter your mobile number"
+                    class="form-input"
+                    id="number"
+                  />
+                  <p class="error" id="number-error"></p>
+                </div>
+                <div class="gender-input">
+                  <label>Gender:</label>
+                  <div>
+                    <input type="radio" name="gender" value="Male" class="radio" id="male"  /><label for="male"> Male</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="gender" value="female" class="radio" id="female"/><label for="female"> Female</label>
+                  </div>
+                  
+                </div>
+                <p class="error" id="gender-error"></p>
+                <div style="text-align: right; ">
+                  <button class="next-btn" >Next</button>
+                </div>
+              </div>
+        </form>
+         <form action="#">
+          <div class="form-page two">
+            <select class="dropdown">
+              <option value="">Qualification</option>
+              <option value="Matric">Matric</option>
+              <option value="Graduate">Graduate</option>
+              <option value="Post Graduate">Post graduate</option>
+            </select>
+            <p class="error" id="qualification_error"></p>
+
+            <label>Hobbies:</label>
+            <div class="checkboxes">
+              <div>
+                <input type="checkbox" name="hobbies" value="Movies" id="Movies"/><label for="Movies">Movies</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hobbies" value="Anime" id="Anime" /><label for="Anime">Anime</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hobbies" value="Dance" id="Dance" /><label for="Dance">Dance</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hobbies" value="Travelling" id="Travelling"/><label for="Traveling">Traveling</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hobbies"  value="Music" id="Music"/><label for="Music">Music</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hobbies" value="Cooking" id="Cooking"/><label for="Cooking">Cooking</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hobbies" value="Reading" id="Reading" /><label for="Reading">Reading</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hobbies" value="Gym" id="Gym" /><label for="Gym">Gym</label>
+              </div>
+             
+            </div>
+            <p class="error" id="hobby-error"></p>
+
+            
+            <div style="text-align: right; margin-top: 20px">
+                <button class="back-btn">Back</button>
+              <button  id="second-next">Next</button>
+            </div>
+          </div>
+        </form> 
+         <form action="#">
+            <div class="form-page three">
+                <input type="password" id="password"  class="form-input" placeholder="Enter password...">
+                <input type="password" id="recheck-password" class="form-input" placeholder="Re-enter password...">
+                <p class="error" id="password-error"></p>
+
+                <div style="display: flex;align-items: center; gap: 5px;">
+                    <input type="checkbox" id="condition-check"><label for="condition-check"> Agree terms and conditions</label>
+                </div>
+                <p class="error" id="condition-error"></p>
+  
+              
+              <div style="text-align: right; margin-top: 20px">
+                  <button id="final-backbtn">Back</button>
+                <button id="submit">Submit</button>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+    <div class="display-container">
+        <h2 style="text-align: center;">User Details</h2>
+      <div><p>Fullname:</p><p id="name"></p></div>
+      <div><p>Email:</p><p id="mail"></p></div>
+      <div><p>Number:</p><p id="phone_number"></p></div>
+      <div><p>Gender:</p><p id="gender"></p></div>
+      <div><p>Qualification:</p><p id="education"></p></div>
+      <div><p>Hobbies:</p><p id="hobby"></p></div>
+      <div><p>Password:</p><p id="user_password"></p></div>
+    </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
